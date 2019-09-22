@@ -1,0 +1,30 @@
+@import "../base/variabes";
+
+.success {
+  &__header {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+  &__title {
+    padding-left: 8px;
+    display: inline-block;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: bottom;
+    font-weight: $font-weight-semi-bold;
+  }
+  &__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: $brand-success;
+    border-radius: 50%;
+    line-height: 24px;
+    color: $white;
+  }
+
+  &__message {
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+}

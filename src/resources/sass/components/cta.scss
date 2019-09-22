@@ -1,0 +1,35 @@
+@import "../base/variabes";
+
+.cta {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &__btn {
+    display: inline-block;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid;
+    border-color: $gray-lighter;
+    background-color: $gray-lighter;
+    color: $gray-dark;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: center;
+    font-family: $ff-base;
+    font-weight: $font-weight-semi-bold;
+    padding: 8px 24px;
+    border-radius: 4px;
+
+    &--block {
+      display: block;
+      width: 100%;
+    }
+
+    &--primary {
+      color: $white;
+      background-color: $brand-primary;
+      border-color: $brand-primary;
+    }
+  }
+}

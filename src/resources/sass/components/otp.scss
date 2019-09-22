@@ -1,0 +1,84 @@
+@import "../base/variabes";
+
+.otp {
+  &__header {
+    padding-top: 3.2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $gray;
+  }
+  // &__desc{}
+  &__phone {
+    display: inline-block;
+    font-weight: $font-weight-semi-bold;
+    padding-right: 8px;
+  }
+  &__edit {
+    display: inline-block;
+  }
+  &__field {
+    position: relative;
+    width: 285px;
+    padding-top: 1.6rem;
+    padding-bottom: 1px;
+    background-image: linear-gradient(
+      270deg,
+      #d8d8d8 70%,
+      hsla(0, 0%, 100%, 0) 0
+    );
+    background-position: bottom;
+    background-size: 50px 1px;
+    background-repeat: repeat-x;
+    background-position-x: 35px;
+    overflow: hidden;
+  }
+
+  &__input {
+    padding-top: 8px;
+    padding: 8px;
+    border: none;
+    font-size: 1.6rem;
+    outline: none;
+    letter-spacing: 42px;
+  }
+
+  &__fail {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &__desc {
+      color: $gray-light;
+      padding-bottom: 8px;
+    }
+  }
+  &__resend {
+    display: inline-block;
+    border-right: 1px solid #d8d8d8;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
+
+    &__icon,
+    &__text {
+      display: inline-block;
+      line-height: 24px;
+    }
+
+    &__icon {
+      padding-right: 8px;
+      font-size: 1.8rem;
+      color: $gray-light;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+  }
+}

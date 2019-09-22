@@ -1,0 +1,79 @@
+@import "../base/variabes";
+@import "../base/mixins";
+
+// Radio
+
+.radio {
+  &__title {
+    font-size: 1.4rem;
+    color: $gray;
+  }
+  &__container {
+    width: 100%;
+    padding-top: 12px;
+
+    .radio--inline & {
+      display: table;
+    }
+  }
+
+  &__item {
+    .radio--inline & {
+      display: table-cell;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    display: block;
+    padding-left: 2.8rem;
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: $gray-dark;
+
+    &::before,
+    &::after {
+      @include pseudo();
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::before {
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #d8d8d8;
+      border-radius: 50%;
+    }
+
+    &::after {
+      top: 5px;
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      background: transparent;
+      border-radius: 50%;
+    }
+  }
+
+  &__input:checked ~ &__label::before {
+    border-color: $brand-primary;
+  }
+
+  &__input:checked ~ &__label::after {
+    background-color: $brand-primary;
+  }
+
+  &__help-text {
+    visibility: hidden;
+    font-size: 1.2rem;
+    color: $gray-light;
+    .radio--has-error & {
+      visibility: visible;
+      color: $brand-error;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import './base/variabes';
+
+.user-agreement {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.2rem;
+  color: $gray-light;
+
+  &__text,
+  &__link {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+  }
+}

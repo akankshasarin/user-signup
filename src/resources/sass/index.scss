@@ -1,0 +1,59 @@
+@import './base/variabes';
+
+html {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $ff-base;
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $gray-dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  padding: 1.6rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.ico {
+  display: inline-block;
+  text-align: center;
+
+
+  & > svg {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    font-size: inherit;
+    vertical-align: middle;
+    color: inherit;
+    fill: currentColor;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+.page-title {
+  @extend strong;
+  padding-bottom: 1.6rem;
+}
